@@ -15,7 +15,7 @@ snippet f
 	}${2:;}
 # Immediate function
 snippet (f
-	(function (${1}) {
+	(function(${1}) {
 		${3:/* code */}
 	}(${2}));
 # if
@@ -78,12 +78,12 @@ snippet do
 	} while (${1:/* condition */});
 # Object Method
 snippet :f
-	${1:method_name}: function (${2:attribute}) {
+	${1:method_name}: function(${2:attribute}) {
 		${4}
 	}${3:,}
 # setTimeout function
 snippet time
-	setTimeout(function () {${3}}${2}, ${1:10});
+	setTimeout(function() {${3}}${2}, ${1:10});
 # Get Elements
 snippet get
 	getElementsBy${1:TagName}('${2}')${3}
@@ -125,7 +125,7 @@ snippet sdf
 	var ${1:function_name} = function(${2:argument}) {
 		${3:// initial code ...}
 
-		$1 = function ($2) {
+		$1 = function($2) {
 			${4:// main code}
 		};
 	}
