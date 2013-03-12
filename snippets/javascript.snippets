@@ -156,3 +156,21 @@ snippet sing
 # module.exports
 snippet mod
 	module.exports = $1
+# test skeleton
+snippet test
+	var assert = require("chai").assert,
+	    ${1:name} = require("${2:path}");
+
+	describe("$1", function() {
+	  ${3}
+	});
+# chai describe block
+snippet desc
+	describe("${1:description}", function() {
+	  ${2}
+	});
+# chai it block
+snippet it
+	it("${1:description}", function() {
+	  ${2}
+	});
